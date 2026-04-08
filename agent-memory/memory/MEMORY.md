@@ -242,3 +242,16 @@ techerHF/aif-memory/
 - [ ] 建立 shared/ 目錄結構
 - [ ] 等待其他 Agent 上線後，建立他們的初始記憶檔案
 - [ ] 設定每日自動同步排程
+
+---
+
+## GitHub 同步記錄（2026-04-08 21:00 UTC）
+
+| 時間 | 操作 | 狀態 |
+|------|------|------|
+| 21:00 | 週期同步檢查 | ✅ 無新內容；aif-factory/hooks/memory_sync.js 已更新並推送 |
+
+**檢查摘要**：
+- workspace-memory/：目錄不存在（已停用）
+- aif-memory/agent-memory/memory/：MEMORY.md、WINS.md、MISTAKES.md 均已同步（最後 commit: 313f664 @ 18:31:40 UTC）
+- aif-factory/hooks/memory_sync.js：發現並推送修正（base path + 13 agents）
