@@ -2,8 +2,8 @@
   "lastChecks": {
     "revenue-check": 1775650860,
     "task-queue": 1775650860,
-    "github-sync": 1775650860,
-    "agent-health": 1775650860
+    "github-sync": 1775658600,
+    "agent-health": 1775658600
   },
   "status": "operational",
   "cron-jobs": "7 jobs active",
