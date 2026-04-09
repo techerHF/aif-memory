@@ -1,56 +1,49 @@
-# MEMORY.md - Manager
+# MEMORY.md — Manager 操作記憶
 
-## 任務記錄
+> 此文件記錄 Manager 的操作學習和當前狀態。
+> 每次任務完成後自動更新。
 
-### 2026-04-08
-- **工廠啟動日**
-- 完成 Skills 和 Hooks 系統建設
-- 記憶同步 GitHub 機制已就緒
-- 收到老闆的完整 28 點工廠架構文件
+---
 
-## 團隊狀態
+## 系統初始化狀態
+**初始化時間**：2026-04-07
+**版本**：v1.0.0
+**狀態**：待命中（等待第一個任務）
 
-| Agent | 狀態 | 最後活動 |
-|-------|------|---------|
-| Manager (我) | ✅ 運作中 | 2026-04-08 |
-| Memory | ✅ 運作中 | 2026-04-08 |
-| 其他 Agents | 🔨 建構中 | - |
+---
 
-## 待辨事項
+## 已知的操作模式
 
-- [ ] 建立 Secretary (優先)
-- [ ] 建立 Researcher
-- [ ] 建立 Writer
-- [ ] 設定每日工廠日報排程
-- [ ] 設定 revenue_alert_hook 排程
+### 任務評估流程
+1. 收到 Researcher 的候選清單
+2. 檢查閉環分數（必須 >= 0.75）
+3. 評估當前 API 額度是否足夠完成任務
+4. 選擇優先級最高的任務
+5. 撰寫任務規格（含明確的完成標準）
+6. 分配給 Writer
 
-## 已知風險
+### 退件處理流程
+1. 收到 QA 退件報告
+2. 閱讀 `must_fix` 清單
+3. 判斷是 Writer 問題還是規格問題
+   - Writer 問題：直接轉發反饋給 Writer
+   - 規格問題：修正規格後再發給 Writer
+4. 記錄退件原因（用於後續改進）
 
-- 老闆習慣用 Control UI 而非 Telegram
-- GitHub Memory Repo 同步已自動化（60秒間隔）
+---
 
-## 數據追蹤
+## 當前 API 額度狀態
+- Minimax：未追蹤（需啟動 rate-state）
+- Gemma：未追蹤（需啟動 rate-state）
 
-### API 使用（今日）
-- Minimax: 還未追蹤
-- Gemma: 還未追蹤
+---
 
-### 收入（本月）
-- 目標：200 USD
-- 目前：0 USD
+## 學到的教訓
+_（初始為空，任務執行後更新）_
 
-## 任務分配 [2026-04-09T11:47:00Z] — Full-Team Stress Test
-- 分配任務：測試 manager 是否能正確寫入 MEMORY
-- 狀態：BUSY（執行中）
+---
 
-## 任務分配 [2026-04-09T12:03:02Z] — Stress Test v2
-- 依據：researcher 候選任務
-- 分配：writer 執行「Arduino 感測器入門系列」寫作任務
-- 優先度：高
-- 依賴链：manager→writer→qa→publisher
-
-## 決策 [2026-04-09T12:19:02Z] — Stress Test v2
-- 依據：cfo 收入分析 + sales 觀察
-- 決策：啟動「Arduino 感測器懶人包」產品線
-- 負責人：sales（市場確認）+ cfo（定價）+ writer（內容）
-- 優先度：高
+## 待辦事項
+- [ ] 建立 `.rate-state/` 資料夾和初始追蹤檔案
+- [ ] 設定環境變數（MINIMAX_API_KEY, GEMMA_API_KEY）
+- [ ] 執行第一次 Researcher 掃描
