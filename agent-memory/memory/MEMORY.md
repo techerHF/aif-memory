@@ -150,6 +150,99 @@
 
 ---
 
+## Reddit/HN 研究掃描（2026-04-09）
+
+**資料來源**：Hacker News（Reddit IP 被封鎖，改用 HN Algolia 搜尋 × 6 關鍵字 + HN Top 20）
+**掃描時間**：2026-04-09T06:04 UTC
+**說明**：Reddit 直接存取遭封鎖，改走 HN；關鍵字涵蓋 arduino、maker、electronics、interactive design、sensor、raspberry pi，加上 HN Top 20。
+
+---
+
+### 📊 本週 Pain Points（抽出 pain_point 的 post）
+
+| # | 標題 | 來源 | Pain Point |
+|---|------|------|------------|
+| 1 | Git commands I run before reading any code | HN:top | Need efficient Git commands to quickly understand an unfamiliar codebase |
+| 2 | I ported Mac OS X to the Nintendo Wii | HN:top | Curiosity about technical challenges of porting OS X to legacy hardware |
+| 3 | LittleSnitch for Linux | HN:top | Need network monitoring/filtering tool for Linux to control outgoing connections |
+| 4 | Who is Satoshi Nakamoto? | HN:top | Desire to uncover Bitcoin creator's true identity |
+| 5 | John Deere to pay $99M right-to-repair settlement | HN:top | Concern about legal/practical implications of right-to-repair |
+| 6 | USB for Software Developers | HN:top | Want to learn writing userspace USB drivers for custom hardware |
+| 7 | Kalman filter with radar example | HN:top | Need clear, practical explanation of Kalman filter with radar example |
+| 8 | Understanding Traceroute | HN:top | Need clear understanding of how traceroute works to diagnose network issues |
+| 9 | Muse Spark: personal superintelligence | HN:top | Curious about scaling AI toward personal superintelligence |
+| 10 | Six intuitions for KL divergence | HN:top | Seeking intuitive explanations for KL divergence in ML |
+| 11 | Ask HN: Any interesting niche hobbies? | HN:top | Looking for novel niche hobbies that allow meaningful contribution |
+| 12 | MegaTrain: Full Precision Training of 100B+ LLMs on 1 GPU | HN:top | Interested in training massive LLMs on a single consumer GPU |
+| 13 | They're made out of meat (1991) | HN:top | Curious about this classic sci-fi short story |
+| 14 | ML promises to be profoundly weird | HN:top | Curious about weird implications of ML |
+
+---
+
+### 📊 熱門硬體/技術討論（按 score 排序）
+
+**Raspberry Pi 系列（持續 dominate）**：
+- Raspberry Pi 400 Desktop PC（2594票，754留言）
+- Raspberry Pi 4（2504票，837留言）
+- Raspberry Pi 5（1674票，1022留言）
+- Raspberry Pi Zero: $5 computer（1271票，513留言）
+- Unbricking a $2k bike with $10 Raspberry Pi（967票）
+- TinyPilot KVM over IP（756票）
+
+**Arduino 動態**：
+- Qualcomm to acquire Arduino（1340票，535留言）— 社群對開源掌控權的焦慮
+- Arduino size of AA battery（528票）
+- The Death of Arduino?（458票）— Arduino 開源相容性爭議
+- Adafruit: Arduino's Rules 'Incompatible With Open Source'（437票）
+
+**感測器/IoT 應用**：
+- Building occupancy sensor with $5 ESP32 + serverless DB（670票）
+- Inside a $1 radar motion sensor（612票）
+- Monitoring home air quality with AirGradient DIY sensor（515票）
+- IKEA Vindriktning Air Quality Sensor review（495票）
+- ESP32 Buyer's Guide: Different Chips, Sensors（490票）
+- Open source USB C camera with MIPI sensor, Lattice FPGA（482票）
+- Tesla removes parking sensors, results terrible（472票）
+- Spy camera detection using smartphone ToF sensors（812票）
+- MacBook hinge angle sensor（1023票）
+
+**Right to Repair（熱門且有法律進展）**：
+- John Deere $99M settlement（258票，66留言）
+- YouTube deleted electronics repair channel（775票）
+- I Had My Electronics Seized by U.S. Customs（951票）
+- Why We Must Fight for Right to Repair（866票）
+- Hacking DRM to Fix Electronics Is Legal（924票）
+
+**軟體開發者相關**：
+- LittleSnitch for Linux（438票）— 網路監控工具需求
+- USB for Software Developers: writing userspace USB drivers（254票）
+- Expanding Swift's IDE Support（101票）
+
+---
+
+### 🔍 本週 Pain Points 總結
+
+1. **Right to Repair 法律化** — John Deere 世紀大和解，DIY 電子維修的法律地位更穩，但電視/汽車巨頭仍被盯上
+2. **IoT 室內環境監控** — ESP32 空氣品質、佔用感測、室內霧霾監測興趣持續高漲，DIY 方案受青睞
+3. **低成本硬體資安** — $1 雷達感測器、ToF 感測器被拿來做間諜相機偵測，隱私與安全意識上升
+4. **Raspberry Pi 持續统治** — Pi 400/5 是 maker 最常用主力機，生態系完整無懸念
+5. **Arduino 開源爭議** — Qualcomm 收購後，社群對「Arduino 規則是否與開源相容」焦慮明顯
+6. **Git/程式碼理解工具** — 工程師需要快速理解陌生 codebase 的工具（不只是看 code）
+7. **USB 硬體程式設計** — 軟體開發者想學寫 userspace USB driver 來做自訂硬體互動
+8. **感測器融合** — 雷達 + ToF + 麥克風陣列 多模態感測興趣增加（尤其 IoT 應用）
+
+### 🚀 跨社群趨勢觀察
+
+1. **Right to Repair 進入法律確認階段** — $99M John Deere 和解是重大里程碑，後續會有更多品牌被迫開放
+2. **感測器平民化** — $1 雷達、$5 ESP32、空氣品質感測器價格帶已到大量採用臨界點
+3. **DIY 空氣品質監控** — 空汙意識 + 疫情後遺症，家用室內空品監測剛需明確
+4. **Apple 硬體封閉性被戰** — MacBook 軸承角度感測器被拿出来討論
+5. **ML/AI 進入各領域** — 從 KL divergence 到 100B parameter training，開發者對 AI 工具需求全面提升
+6. **Linux 桌面安全工具缺口** — LittleSnitch for Linux 熱門，反映 Linux 玩家對網路監控的強烈需求
+7. **IoT + 雲端無服務器整合** — ESP32 + serverless DB 的室內感測案例，證明輕量化 IoT + 後端即服務已完全可行
+
+---
+
 ## 初始化狀態
 **初始化時間**：2026-04-08
 **工廠生日**：2026-04-08（與老闆同一天 🎂）
