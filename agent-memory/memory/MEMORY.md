@@ -387,3 +387,7 @@ openclaw.config.json 中正確設定為 `base_url: "https://api.minimax.io/v1"`
 
 **Agents 狀態**（有實質內容）：manager, memory, cfo, counselor, writer
 **Agents 狀態**（模板檔）：dreamer, explorer, publisher, qa, researcher, sales, secretary, seo
+
+## 壓力測試寫入 [2026-04-09T11:53:21.161Z]
+- 任務：Full-Team Stress Test Item 12
+- Agent：memory
