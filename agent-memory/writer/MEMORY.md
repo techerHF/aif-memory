@@ -106,3 +106,8 @@ _初始為空，第一次退件後開始記錄_
 ## Q2 啟動 R10 [2026-04-09T14:14:00Z] — Round 10
 - writer Q2 正式啟動
 - 目標：月營收 $500 + 500 UV/月
+
+## writer 任務 [2026-04-09T14:35:00Z] — v2.1 Pilot
+- 讀取：BEST_PRACTICES（5行）、CURIOSITY_POOL（5行）
+- 寫入：WINS.md、MEMORY.md
+- 這不是 main 在假扮，這是 writer subagent 獨立執行
