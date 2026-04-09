@@ -257,3 +257,30 @@ techerHF/aif-memory/
 - workspace-memory/MISTAKES.md：最後修改 09:27 UTC，無變更
 - aif-memory/agent-memory/memory/：三檔案均與 HEAD (2a3a02f) 完全一致
 - Git working tree clean，無待提交變更
+
+## 診斷記錄 [2026-04-09T02:18:00Z] — MiniMax API Key 2049 錯誤排查
+
+### 錯誤分類：PROVIDER_CONFIG_ERROR
+
+### 根本原因（已確認）
+memory_sync.js 第 53 行 hardcode 了錯誤的 API endpoint：
+- **錯誤值**：https://api.minimax.chat/v1/text/chatcompletion_v2
+- **正確值**：https://api.minimax.io/v1/text/chatcompletion_v2
+
+openclaw.config.json 中正確設定為 `base_url: "https://api.minimax.io/v1"`
+但 hooks/memory_sync.js 直接構造完整 URL，繞過了 config
+
+### 驗證結果
+| 測試 | 結果 |
+|------|------|
+| api.minimax.chat | 2049 invalid api key |
+| api.minimax.io | 200 OK，response valid |
+
+### 受影響範圍
+- memory_sync hook 的 generateReflection() 全部失敗
+- 任何直接使用 api.minimax.chat 的程式碼
+
+### 下一步
+修正 memory_sync.js 的 API endpoint，或改用 provider config 的 base_url
+
+---

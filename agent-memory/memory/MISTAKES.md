@@ -33,3 +33,13 @@
 ## 過往犯錯（空）
 
 如果未來有犯錯，會記錄在這裡。
+
+## [2026-04-09T02:18:00Z] PROVIDER_CONFIG_ERROR — API Endpoint 錯誤
+
+- **檔案**: hooks/memory_sync.js 第 53 行
+- **錯誤**: hardcode api.minimax.chat 而非使用 config 的 api.minimax.io
+- **影響**: generateReflection() 全部失敗（2049 invalid api key）
+- **教訓**: 不應該繞過 provider config 直接構造 URL
+- **不要再犯**: 所有 API 呼叫應使用統一的 config base_url
+
+---

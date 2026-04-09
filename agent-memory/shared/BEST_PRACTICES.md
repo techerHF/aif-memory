@@ -102,3 +102,21 @@
 5. **技術可行**：現有工具鏈可以執行，不依賴未知能力
 
 閉環分數 < 0.75 的任務：Researcher 不得推薦，Manager 不得接受。
+
+## [2026-04-09] MiniMax API 呼叫標準流程
+
+### 正確方式
+```javascript
+// 從 config 讀取 base_url，不直接 hardcode
+const baseUrl = config.llm_providers.minimax.base_url // https://api.minimax.io/v1
+const fullUrl = `${baseUrl}/text/chatcompletion_v2`
+// 不要用 api.minimax.chat
+```
+
+### 排查清單（當遇到 API 錯誤時）
+1. 確認 .env MINIMAX_API_KEY 存在且長度 = 125
+2. 測試 api.minimax.io（非 api.minimax.chat）
+3. 檢查 openclaw.config.json 的 base_url 設定
+4. 確認 hooks/skills 不繞過 config 直接構造 URL
+
+---
