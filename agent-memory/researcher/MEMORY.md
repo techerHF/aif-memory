@@ -54,3 +54,9 @@ _初始為空，開始掃描後更新_
 - 發現：maker 社群、IoT 應用、Arduino 進階
 - 品質：R1 只有數量，R2 有優先順序排序
 - 反思：R1 只有寬度，R2 開始有深度分類
+## 研究掃描 [2026-04-09T13:28:00Z] — Learning Stress Test v3 Round 1
+- 來源1：Reddit r/arduino — Arduino 感測器討論串
+- 來源2：Hackster.io — IoT 專案熱門
+- 來源3：DEV.to — Arduino 教程流量穩定
+- 候選題目：Arduino 感測器懶人包（高需求）
+- 備註：這是基準研究，用於衡量未來研究深度提升
