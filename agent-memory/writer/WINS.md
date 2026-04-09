@@ -29,3 +29,4 @@ _第一個任務完成後，在此追加記錄。_
 - [2026-04-09] stress_v3 R1: 接收 researcher 題目，完成 Arduino 懶人包草稿
 - [2026-04-09] stress_v3 R2: 根據 qa 反饋完成 v2 修訂，主動引用 BEST_PRACTICES
 - [2026-04-09] v2.1 pilot: writer 完成第一個獨立任務（讀取 BEST_PRACTICES + CURIOSITY_POOL）
+- [2026-04-09] Test Task — Memory Sync Verification [test-001] （85/100）
