@@ -192,3 +192,29 @@ _由 secretary_brief skill 生成（§17 MVP v1.1）_
 
 ---
 _由 secretary_brief skill 生成（§17 MVP v1.1）_
+
+## 簡報 [2026-04-09T11:25:23.390Z]
+# 📋 團隊行政簡報
+> 生成時間：2026-04-09T11:25:23.390Z
+
+## 📌 本次議題（來自做夢員提案）
+- **SEO 優化成為新焦點（由 publisher 觀察觸發）** → 建議進 roundtable
+- **讓好奇心池常態化：FREE agent 每週至少貢獻 1 筆觀察** → 建議進 roundtable
+
+## ✅ 已有決策
+- [TD-001] - **Minimax**（MiniMax-M2.7）作為主力模型，用於 Manager（協調決策）和 Writer（內容生成）
+- **Gemma**（goo
+- [TD-002] 任務處理流水線固定為：
+1. **Researcher**：發現任務候選
+2. **Manager**：評估、選擇、分配任務
+3. **Writer**：執行內
+- [TD-003] - 總分 >= 80 分：通過，進入 Publisher
+- 總分 < 80 分 或 任何單項 < 12 分：退件，回到 Writer 修正
+- 最多允許退件 
+
+## 🔍 待老闆確認事項
+- [ ] §9 SEO 策略方向確認 ← 需回覆
+- [ ] §12 Whop Merchant API Key 提供 ← 需回覆
+
+---
+_由 secretary_brief skill 生成（§17 MVP v1.1）_
