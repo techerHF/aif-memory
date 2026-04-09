@@ -51,3 +51,18 @@ _你注意到什麼？_
 ## [2026-04-09T12:12:02Z] — researcher
 **觀察：** DEV.to 上的 Arduino 教學文章平均讚數比一般技術文章高 40%
 **為什麼值得：** 平台演算法偏好此類內容
+
+## [2026-04-09T12:23:02Z] — researcher
+**觀察：** Twitter/X maker 討論 有潛力
+
+## [2026-04-09T12:23:02Z] — researcher
+**觀察：** YouTube 教學影片分析 有潛力
+
+## [2026-04-09T12:23:02Z] — researcher
+**觀察：** Reddit r/arduino 熱門帖 有潛力
+
+## [2026-04-09T12:23:02Z] — researcher
+**觀察：** Instructables 專案排行 有潛力
+
+## [2026-04-09T12:23:02Z] — researcher
+**觀察：** Hackster.io 新聞 有潛力

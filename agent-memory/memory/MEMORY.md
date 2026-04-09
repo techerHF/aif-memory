@@ -391,3 +391,8 @@ openclaw.config.json 中正確設定為 `base_url: "https://api.minimax.io/v1"`
 ## 壓力測試寫入 [2026-04-09T11:53:21.161Z]
 - 任務：Full-Team Stress Test Item 12
 - Agent：memory
+
+## 記憶同步 [2026-04-09T12:19:04Z] — Stress Test v2
+- 同步範圍：manager/writer/qa/publisher/dreamer/secretary
+- 同步內容：WINS/MISTAKES/MEMORY 增量
+- 結果：✅ 全部同步完成

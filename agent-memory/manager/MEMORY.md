@@ -48,3 +48,9 @@
 - 分配：writer 執行「Arduino 感測器入門系列」寫作任務
 - 優先度：高
 - 依賴链：manager→writer→qa→publisher
+
+## 決策 [2026-04-09T12:19:02Z] — Stress Test v2
+- 依據：cfo 收入分析 + sales 觀察
+- 決策：啟動「Arduino 感測器懶人包」產品線
+- 負責人：sales（市場確認）+ cfo（定價）+ writer（內容）
+- 優先度：高
