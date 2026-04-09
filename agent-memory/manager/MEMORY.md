@@ -38,3 +38,7 @@
 ### 收入（本月）
 - 目標：200 USD
 - 目前：0 USD
+
+## 任務分配 [2026-04-09T11:47:00Z] — Full-Team Stress Test
+- 分配任務：測試 manager 是否能正確寫入 MEMORY
+- 狀態：BUSY（執行中）
