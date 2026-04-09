@@ -60,3 +60,9 @@ _初始為空，開始掃描後更新_
 - 來源3：DEV.to — Arduino 教程流量穩定
 - 候選題目：Arduino 感測器懶人包（高需求）
 - 備註：這是基準研究，用於衡量未來研究深度提升
+
+## 研究掃描 R2 [2026-04-09T13:50:08Z] — Learning Stress Test v3 Round 2
+- R1：3 個來源，候選題目 Arduino 感測器懶人包
+- CURIOSITY_POOL 引用：確認 explorer 的 Tinkercad 發現
+- R2 新發現：Reddit r/arduino 熱門主題升級為「IoT 感測器整合」
+- R1→R2 進步：從單一題目到題目演化追蹤

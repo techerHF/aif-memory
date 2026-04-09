@@ -117,3 +117,9 @@ maker 社群正在尋找中等難度的實際專案，但供給不足
 - 標題方向：《從零開始的 Arduino 感測器攻略》
 - 差異化：結合電路圖（Fritzing）+ 程式碼模擬（Wokwi）+ 失敗案例
 - 備註：這是基準提案，用於衡量未來提案深度提升
+
+## 創意提案 R2 [2026-04-09T13:50:12Z] — Learning Stress Test v3 Round 2
+- 觸發：explorer 的 Tinkercad 發現 + researcher 的 IoT 感測器趨勢
+- BEST_PRACTICES 引用：Fritzing + Wokwi 組合已被採納
+- 提案：《IoT 感測器三部曲》— 電路圖+程式碼+失敗案例
+- R1→R2：從單一工具到工具組合比較

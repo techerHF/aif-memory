@@ -58,3 +58,10 @@ _初始為空，第一次退件後開始記錄_
 - 依據：researcher 的 CURIOSITY_POOL 建議
 - 產出：文章結構 + 電路圖框架 + 程式碼
 - 備註：這是基準草稿，用於衡量未來寫作深度提升
+
+## 寫作修訂 R2 [2026-04-09T13:50:00Z] — Learning Stress Test v3 Round 2
+- 依據：qa R1 反饋（電路圖不完整、缺少失敗案例、程式碼註釋不足）
+- 引用：BEST_PRACTICES.md（Arduino 懶人包製作規範）
+- 工具：Fritzing 電路圖 + Wokwi 程式碼模擬
+- 產出：v2 草稿（電路圖完整 + 3 個失敗案例 + 詳細註釋）
+- 成長亮點：R1 無引用 shared，R2 主動引用 BEST_PRACTICES

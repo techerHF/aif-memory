@@ -43,3 +43,9 @@ _最後更新：2026-04-09_
 - 來源2：Product Hunt — Wokwi Arduino 模擬器新發布
 - 評估：Fritzing 適合懶人包電路圖，Wokwi 適合程式碼測試
 - 備註：這是基準探索，用於衡量未來探索深度提升
+
+## 工具探索 R2 [2026-04-09T13:50:03Z] — Learning Stress Test v3 Round 2
+- R1 發現：Fritzing + Wokwi
+- CURIOSITY_POOL 引用：確認 Arduino 感測器需求穩定
+- R2 新發現：Tinkercad 也支援 Arduino 模擬，且有免費雲端版本
+- R1→R2 進步：從工具發現升級到工具比較評估
