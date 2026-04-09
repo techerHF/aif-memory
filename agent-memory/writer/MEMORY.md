@@ -78,3 +78,11 @@ _初始為空，第一次退件後開始記錄_
 - TEAM_DECISIONS 引用：確認 TD-003 產品開發優先序
 - 產出：《IoT 感測器實戰》草稿（結合所有 shared 記憶）
 - 成長亮點：R4 主動引用 3 個 shared 檔案（R1=0, R2=1）
+
+## 寫作系列 R5 [2026-04-09T14:08:00Z] — Learning Stress Test v3 Round 5
+- 主題：《IoT 感測器三部曲》系列文章
+- Part 1: Arduino 感測器基礎（已發布）
+- Part 2: ESP32 + 雲端整合（writer+dreamer 協作）
+- Part 3: 進階專案案例（待 dreamer 提案）
+- BEST_PRACTICES：三工具整合製作流程標準化
+- 成長亮點：從單篇（R1）→系列（R5），產出規模化

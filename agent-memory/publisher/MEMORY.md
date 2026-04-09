@@ -70,3 +70,10 @@ _初始為空，每次使用新平台後更新_
 - TEAM_DECISIONS 引用：TD-003 發布時間窗口
 - 《IoT 感測器實戰》排程：2026-04-11 09:00 UTC
 - 成長亮點：從排程執行（R1）→流程優化（R4）
+
+## 多平台發布策略 R5 [2026-04-09T14:08:05Z] — Learning Stress Test v3 Round 5
+- 平台：DEV.to + Instructables + Hackster.io
+- 差異化：每個平台內容適配（標題/格式/關鍵字）
+- 排程：DEV.to 週一 / Instructables 週三 / Hackster 週五
+- BEST_PRACTICES 更新：多平台發布標準流程
+- 成長亮點：從單平台→多平台矩陣

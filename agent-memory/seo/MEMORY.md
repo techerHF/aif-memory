@@ -66,3 +66,10 @@ _最後更新：2026-04-09_
 - TEAM_DECISIONS 引用：TD-003 產品開發需要 SEO 支援
 - 關鍵字策略：「IoT 感測器實戰」「Arduino 整合」「Tinkercad 模擬」
 - 成長亮點：從被動分析（R1）→主動預測（R2）→策略制定（R4）
+
+## SEO 長期策略 R5 [2026-04-09T14:08:03Z] — Learning Stress Test v3 Round 5
+- 關鍵字地圖：《IoT 感測器三部曲》覆蓋 20+ 長尾關鍵字
+- 競爭难词：「Arduino 教程」-> 優先長尾：「Arduino 感測器 懶人包」
+- 季度計劃：Q2 目標 500 UV/月
+- TEAM_DECISIONS 更新：寫入 SEO 季度目標
+- 成長亮點：從單篇優化→系統性關鍵字規劃

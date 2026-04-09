@@ -77,3 +77,10 @@ _初始為空，開始掃描後更新_
 - BEST_PRACTICES 引用：確認 maker 內容製作規範
 - 發現：《IoT 感測器實戰》系列有 3 個子題可擴展
 - 成長亮點：從寬度（R1）→深度（R2）→跨源整合（R4）
+
+## 競爭分析 R5 [2026-04-09T14:08:02Z] — Learning Stress Test v3 Round 5
+- 對象：Hackster.io / Instructables / DEV.to Arduino 內容
+- 分析：我們的差異化：電路圖+模擬+失敗案例
+- 競爭力：高品質懶人包市場供應不足
+- CURIOSITY_POOL 更新：發現新興平台「CircuitLab」性價比高
+- 成長亮點：從機會發現→系統性競爭分析
