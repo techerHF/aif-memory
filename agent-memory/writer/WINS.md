@@ -31,3 +31,5 @@ _最後更新：2026-04-09_
 - [2026-04-09] 壓力測試：writer 完成 Round 1 任務
 - [2026-04-09] Round 2 任務A完成
 - [2026-04-09] Full-Team Stress Test — writer
+- [2026-04-09] Stress Test v2: writer 任務接收+產出草稿（Round 1）
+- [2026-04-09] Stress Test v2: writer 完成 v2 修訂（Round 2）

@@ -42,3 +42,9 @@
 ## 任務分配 [2026-04-09T11:47:00Z] — Full-Team Stress Test
 - 分配任務：測試 manager 是否能正確寫入 MEMORY
 - 狀態：BUSY（執行中）
+
+## 任務分配 [2026-04-09T12:03:02Z] — Stress Test v2
+- 依據：researcher 候選任務
+- 分配：writer 執行「Arduino 感測器入門系列」寫作任務
+- 優先度：高
+- 依賴链：manager→writer→qa→publisher
