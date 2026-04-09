@@ -71,3 +71,10 @@ _初始為空，第一次退件後開始記錄_
 - 修正：已補充完整電路圖（Fritzing）
 - BEST_PRACTICES 引用：確認所有工具步驟已遵循
 - 反思：R3 錯誤注入測試 → 恢復成功，QA 把關有效
+
+## 寫作任務 R4 [2026-04-09T14:02:00Z] — Learning Stress Test v3 Round 4（Shared Learning）
+- BEST_PRACTICES 引用：確認 Arduino 懶人包製作規範（Fritzing+Wokwi）
+- CURIOSITY_POOL 引用：IoT 感測器整合是上升話題
+- TEAM_DECISIONS 引用：確認 TD-003 產品開發優先序
+- 產出：《IoT 感測器實戰》草稿（結合所有 shared 記憶）
+- 成長亮點：R4 主動引用 3 個 shared 檔案（R1=0, R2=1）

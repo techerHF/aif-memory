@@ -128,3 +128,10 @@ maker 社群正在尋找中等難度的實際專案，但供給不足
 - 觸發：R3 錯誤注入 → QA 把關有效 → 信任品質
 - 提案：《Maker 成長路徑》懶人包
 - BEST_PRACTICES 引用：結合 Fritzing + Wokwi + Tinkercad
+
+## 創意提案 R4 [2026-04-09T14:02:11Z] — Learning Stress Test v3 Round 4
+- BEST_PRACTICES 引用：Fritzing+Wokwi+Tinkercad 三工具整合
+- CURIOSITY_POOL 引用：IoT 感測器+Tinkercad+Arduino 上升
+- TEAM_DECISIONS 引用：TD-003 產品線延伸
+- 提案：《IoT 感測器三部曲》— 電路圖+程式碼+失敗案例+模擬
+- 成長亮點：從單一工具（R1）→工具組合（R2）→系統性整合（R4）

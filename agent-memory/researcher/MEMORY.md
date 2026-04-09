@@ -71,3 +71,9 @@ _初始為空，開始掃描後更新_
 - R3：監控錯誤注入後的社群反饋
 - 發現：IoT 感測器討論度在 Reddit 持續上升
 - 下一候選：《IoT 感測器實戰》文章系列
+
+## 研究掃描 R4 [2026-04-09T14:02:02Z] — Learning Stress Test v3 Round 4
+- CURIOSITY_POOL 引用：IoT 感測器+Tinkercad+Arduino 整合
+- BEST_PRACTICES 引用：確認 maker 內容製作規範
+- 發現：《IoT 感測器實戰》系列有 3 個子題可擴展
+- 成長亮點：從寬度（R1）→深度（R2）→跨源整合（R4）

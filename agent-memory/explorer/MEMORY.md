@@ -49,3 +49,9 @@ _最後更新：2026-04-09_
 - CURIOSITY_POOL 引用：確認 Arduino 感測器需求穩定
 - R2 新發現：Tinkercad 也支援 Arduino 模擬，且有免費雲端版本
 - R1→R2 進步：從工具發現升級到工具比較評估
+
+## 工具探索 R4 [2026-04-09T14:02:04Z] — Learning Stress Test v3 Round 4
+- CURIOSITY_POOL 引用：確認 IoT 感測器需求持續上升
+- BEST_PRACTICES 引用：確認 Tinkercad 已加入工具清單
+- 新發現：Wokwi 新版本支援 ESP32 感測器模擬
+- 成長亮點：從工具發現（R1）→工具比較（R2）→工具評估（R4）
