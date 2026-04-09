@@ -1,35 +1,28 @@
-# WINS.md — {AGENT}
+# WINS.md — Writer 勝利記錄
 
-## 成功案例記錄
-
-### 案例模板
-```
-## [時間戳] 任務名稱
-- **Task ID**: 
-- **成功原因**: 
-- **可複製做法**: 
-- **相關連結**: 
-```
+> 記錄高分通過的作品和寫作突破。
 
 ---
 
-_最後更新：2026-04-09_
+## 系統初始化
+**日期**：2026-04-07
+**成就**：Writer Agent 成功初始化，筆已就位。
 
-## [2026-04-09T01:58:13.282Z] Haptic Sensor Tutorial: FSR402 with Arduino
-- **Task ID**: github-verified-success-001
-- **QA Score**: 88/100
-- **Word Count**: 1,820 字
-- **DEV.to URL**: https://dev.to/xufu/haptic-sensor-tutorial
-- **Duration**: 52s
-- [2026-04-09] Hook Integration MVP 完成：pre_publish → memory_sync → refle... [hook-integration-test-001] （品質分 88/100）, 1520 字
-- [2026-04-09] Hook Integration 第二輪驗證：MEMORY.md 反射寫入確認 [memory-verification-test-001] （品質分 92/100）, 1680 字
-- [2026-04-09] 文章初稿完成 [state-test-001] （85/100）
-- [2026-04-09] 初稿完成 [autotest-001] （88/100）
-- [2026-04-09] 初稿完成 [async-test-001] （90/100）
-- [2026-04-09] QA通過，修訂完成 [async-test-001] （92/100）
-- [2026-04-09] 壓力測試：writer 完成測試任務（Round 1）
-- [2026-04-09] 壓力測試：writer 完成 Round 1 任務
-- [2026-04-09] Round 2 任務A完成
-- [2026-04-09] Full-Team Stress Test — writer
-- [2026-04-09] Stress Test v2: writer 任務接收+產出草稿（Round 1）
-- [2026-04-09] Stress Test v2: writer 完成 v2 修訂（Round 2）
+---
+
+_第一個任務完成後，在此追加記錄。_
+
+## 記錄格式範本
+```
+## [YYYY-MM-DD] 作品標題
+- **任務 ID**：TASK-XXX
+- **任務類型**：（文案 / 文章 / 翻譯 / 報告 / 其他）
+- **字數**：XXX 字
+- **語言**：中文 / 英文 / 日文
+- **QA 分數**：XX / 100
+- **完成時間**：XX 分鐘
+- **客戶反饋**：（如有）
+- **這次做得好的地方**：
+  1. ...
+- **可複製到其他任務的技巧**：
+```
