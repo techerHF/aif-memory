@@ -37,5 +37,18 @@
 
 ## 現有背景
 
-（空，等待第一筆寫入）
+---
+
+## [2026-04-09] 背景更新：Telegram 群組 Bot 架構變更
+
+**現況：** 4 個 bot（@AIF_HF_BOT、@AIF_Writer_BOT、@AIF_QA_BOT、@AIF_Secretary_BOT）已成功加入同一群組。Bot 隱私模式已關閉，bot 可在群組正常接收與回應訊息。
+**約束條件：** Bot 無法自動看到其他 bot 的訊息（Telegram 原生限制），需靠 Agent-AIF 後端接棒。
+**來源：** 群組討論
+**信心等級：** confirmed
+**狀態：** current
+**相關決策：** #1（共享記憶機制 v1 建立）
+**寫入時間：** 2026-04-09T19:08:00Z
+**記錄人：** Agent-AIF
+
+備註：inferred 僅供內部參考，不代表團隊共識。
 
