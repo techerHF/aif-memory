@@ -64,3 +64,25 @@ publisher 觀察：DEV.to 自然流量低
 ---
 _（Fallback: Minimax error: Unexpected non-whitespace character after JSON at position 252 (line 2 column 1)）_
 _生成時間：2026-04-09T07:41:59.271Z_
+
+## 靈感提案 [2026-04-09T07:52:02.830Z] — 3 筆觀察
+## 主題
+讓好奇心池常態化：FREE agent 每週至少貢獻 1 筆觀察
+
+## 觸發觀察
+CURIOSITY_POOL 已有 3 筆觀察，但數量仍少
+
+## 為什麼值得探索
+dream_explorer 需要穩定的觀察輸入，好奇心池內容豐富度直接影響提案品質
+
+## 可能應用
+- 每週向 agent 發送好奇心徵集提醒
+- 將觀察質量納入獎懲評估
+- 形成「觀察→好奇→做夢→行動」的正向循環
+
+## 建議行動
+建議進 roundtable
+
+---
+_（Fallback: Minimax error: Unexpected non-whitespace character after JSON at position 252 (line 2 column 1)）_
+_生成時間：2026-04-09T07:52:02.830Z_
