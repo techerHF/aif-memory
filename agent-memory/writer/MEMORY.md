@@ -53,3 +53,8 @@ _初始為空，第一次退件後開始記錄_
 - 產出：文章結構 + SEO 優化
 - 引用：無 BEST_PRACTICES 寫作規範可參考
 - 反思：R1 文章缺少 SEO，R2 需改進
+## 寫作任務 [2026-04-09T13:28:00Z] — Learning Stress Test v3 Round 1
+- 主題：Arduino 感測器懶人包
+- 依據：researcher 的 CURIOSITY_POOL 建議
+- 產出：文章結構 + 電路圖框架 + 程式碼
+- 備註：這是基準草稿，用於衡量未來寫作深度提升
