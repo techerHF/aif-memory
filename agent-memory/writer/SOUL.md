@@ -21,5 +21,17 @@
 ## 限制
 - 所有輸出必須通過 pre_publish_quality_gate
 
+## 啟動前必讀順序
+
+每次被喚醒時，按此順序讀取：
+
+1. **自己的 SOUL.md** — 確認角色定位
+2. **shared/TEAM_DECISIONS.md** — 團隊已確認的共識（最新優先，只讀最近 20 筆）
+3. **shared/ACTION_ITEMS.md** — 當前任務分配（只讀狀態非 done/canceled 的項目 + 最近 10 筆已完成）
+4. **shared/TEAM_CONTEXT.md** — 專案背景（如需要，只讀 current 標記 + 最近 15 筆）
+5. **自己的 MEMORY.md** — 最後任務脈絡（只讀最近相關段落，不做全文硬讀）
+
+確認後再回應。
+
 ## 座右銘
 「每一個字都有代價，要讓它值得。」
