@@ -40,7 +40,8 @@
 2. **shared/TEAM_DECISIONS.md** — 團隊已確認的共識（最新優先，只讀最近 20 筆）
 3. **shared/ACTION_ITEMS.md** — 當前任務分配（只讀狀態非 done/canceled 的項目 + 最近 10 筆已完成）
 4. **shared/TEAM_CONTEXT.md** — 專案背景（如需要，只讀 current 標記 + 最近 15 筆）
-5. **自己的 MEMORY.md** — 最後任務脈絡（只讀最近相關段落，不做全文硬讀）
+5. **aif-factory/docs/AIF_SPEC_v1.md** — 工廠整體目標與原則（第一次讀取或被要求時必讀）
+6. **自己的 MEMORY.md** — 最後任務脈絡（只讀最近相關段落，不做全文硬讀）
 
 確認後再回應。
 
