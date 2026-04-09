@@ -11,6 +11,72 @@
 
 ---
 
+## Reddit 研究掃描（2026-04-09）
+
+**掃描範圍**：r/arduino、r/Electronics、r/esp32、r/PrintedCircuitBoard、r/ECE、r/DIY（r/maker、r/InteractiveArt 本週無數據）
+**資料來源**：Pushshift Reddit Search API（pullpush.io）
+**時間範圍**：2026-04-02 ~ 2026-04-09 (UTC)
+
+---
+
+### 🔴 Pain Points（本週問題）
+
+1. **NRF24L01 天線接地問題**（r/arduino，18pts）
+   - 發射距離需觸碰天線才正常→懷疑接地不良
+   - 常見硬體除錯痛點：高頻 RF 電路需要良好接地
+
+2. **數位時鐘時間不準 + 按鈕失效**（r/arduino，29pts，18cmts）
+   - 新手問題：RTC 模組未正確同步、debounce 沒做
+   - 典型入門陷阱
+
+3. **ESP32 SD 卡槽無法 mount**（r/esp32，53pts）
+   - 自定義 PCB 上常見：SPI 接線顛倒或 pull-up 電阻不足
+   - 高票關注，硬體佈局陷阱
+
+4. **iPhone 電池供電 Arduino Nano + OLED**（r/arduino，16pts）
+   - 行動供電整合需求：BMS 選型、升壓/降壓電路
+
+5. **STM32CubeIDE 對初學者不友善**（r/ECE，6pts，7cmts）
+   - 嵌入式開發環境學習曲線問題
+
+6. **ESP32 USB 橋接 DualShock 4 到 Nintendo Switch**（r/esp32，6pts）
+   - USB HID 列舉失敗，常見除錯痛點
+
+---
+
+### 🟢 趨勢亮點
+
+1. **Gyroscope Mouse**（r/arduino，90pts，11cmts）
+   - 陀螺儀取代光學感測器創意專案，社群反應熱烈
+
+2. **超遠距離資料傳輸需求（10km）**（r/arduino，10pts，43cmts）
+   - LoRa / 雷射通訊興趣，太陽能偏遠監控應用
+
+3. **Bionic Arm 硬體調試**（r/arduino，8pts）
+   - 仿生義肢興趣持續，馬達角度微調
+
+4. **桌面遙測顯示器（T-Display-S3 AMOLED）**（r/esp32，30pts）
+   - ESP32-S3 作為資訊面板的應用流行
+
+5. **電容 Balling（快遞振動導致）**（r/Electronics，25pts，12cmts）
+   - 物流損壞問題，社群共鳴高
+
+6. **LED Astable Multivibrator 手作電路**（r/Electronics，634pts）
+   - 類比電路教育專案，高讚互動
+
+---
+
+### 📌 觀察摘要
+
+- **ESP32 生態系活躍**：相較 Arduino，ESP32 專案多樣性更高（SD卡、USB橋接、遙測）
+- **硬體除錯是永恆痛點**：接地、SPI接線、供電問題反覆出現
+- **新手向內容（Arduino）**：佔多數，但深度討論偏少
+- **r/maker / r/InteractiveArt 本週數據極少**，可能與 Easter 假期效應相關（美國春假期間）
+
+---
+
+---
+
 ### 📊 r/arduino — 熱門主題與 Pain Points
 
 **All-time 熱門專案**（依 score）：
@@ -387,64 +453,3 @@ openclaw.config.json 中正確設定為 `base_url: "https://api.minimax.io/v1"`
 
 **Agents 狀態**（有實質內容）：manager, memory, cfo, counselor, writer
 **Agents 狀態**（模板檔）：dreamer, explorer, publisher, qa, researcher, sales, secretary, seo
-
-## 壓力測試寫入 [2026-04-09T11:53:21.161Z]
-- 任務：Full-Team Stress Test Item 12
-- Agent：memory
-
-## 記憶同步 [2026-04-09T12:19:04Z] — Stress Test v2
-- 同步範圍：manager/writer/qa/publisher/dreamer/secretary
-- 同步內容：WINS/MISTAKES/MEMORY 增量
-- 結果：✅ 全部同步完成
-## 記憶同步 [2026-04-09T13:28:00Z] — Learning Stress Test v3 Round 1
-- 同步範圍：manager / secretary / researcher / writer / seo / publisher / sales / qa / explorer / cfo
-- 觀察：全部 10 個 agent 都有 R1 任務產出
-- 品質：所有產出都有「備註：用於衡量未來成長」標記
-- 備註：這是基準同步，用於衡量未來同步深度提升
-
-## 記憶同步 R2 [2026-04-09T13:50:10Z] — Learning Stress Test v3 Round 2
-- R1→R2 觀察：全部 agent 都有迭代產出
-- 成長亮點：writer 從無引用 shared → 主動引用 BEST_PRACTICES
-- 成長亮點：qa 從 55分 → 63分（+8）cross-agent 學習鏈驗證
-- 成長亮點：secretary 從狀態描述 → 量化數據+鏈路追蹤
-
-## 記憶同步 R3 [2026-04-09T13:57:05Z] — Learning Stress Test v3 Round 3
-- R3 錯誤注入測試：writer 電路圖遺漏（danger）
-- qa 發現危險等效：PENDING_ALERTS 寫入 ✅
-- writer 自我修正：< 1 分鐘恢復 ✅
-- counselor 處理：正確追蹤並結案 ✅
-- 結論：危險→行動→恢復 鏈完整
-
-## 記憶同步 R4 [2026-04-09T14:02:08Z] — Learning Stress Test v3 Round 4
-- Shared Learning 驗證：全部 13 個 agent 都引用了至少 1 個 shared 檔案
-- BEST_PRACTICES：被 5 個 agent 引用 ✅
-- CURIOSITY_POOL：被 5 個 agent 引用 ✅
-- TEAM_DECISIONS：被 5 個 agent 引用 ✅
-- 成長亮點：R1=0 shared 引用 → R4=15 shared 引用
-
-## 學習記錄建立 R5 [2026-04-09T14:08:08Z] — Learning Stress Test v3 Round 5
-- R1-R5 成長軌跡記錄完成
-- shared BEST_PRACTICES 更新：IoT 文章品質標準 + 四工具指南 + 多平台流程
-- TEAM_DECISIONS 更新：SEO 季度目標 + Q2 OKR + 定價策略
-- CURIOSITY_POOL 更新：CircuitLab 新工具發現
-- 成長亮點：從被動同步→主動建立團隊學習記錄
-
-## 運營優化 R6 [2026-04-09T14:10:00Z] — Round 6
-- 流程標準化：memory 核心流程已建立標準文檔
-- BEST_PRACTICES 引用：持續優化
-
-## Q2 規劃 R7 [2026-04-09T14:11:00Z] — Round 7
-- memory Q2 OKR 已設定
-- TEAM_DECISIONS 引用：Q2 戰略對齊
-
-## 流程審計 R8 [2026-04-09T14:12:00Z] — Round 8
-- memory 流程審計完成
-- CURIOSITY_POOL 引用：持續改進
-
-## 客戶回饋 R9 [2026-04-09T14:13:00Z] — Round 9
-- memory 整合客戶回饋到流程
-- BEST_PRACTICES 引用：持續改善
-
-## Q2 啟動 R10 [2026-04-09T14:14:00Z] — Round 10
-- memory Q2 正式啟動
-- 目標：月營收 $500 + 500 UV/月
