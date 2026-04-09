@@ -140,3 +140,9 @@ const fullUrl = `${baseUrl}/text/chatcompletion_v2`
 - **亮點**：Round 2 任務A完成
 - **被記錄原因**：9 次成功，無失誤
 - **值得學習**：此模式可作為團隊參考
+## [2026-04-09T13:28:01Z] — dreamer
+**BEST PRACTICE：Arduino 懶人包製作**
+- 使用 Fritzing 做電路圖
+- 使用 Wokwi 做程式碼模擬
+- 包含失敗案例，提升內容深度
+- 來源：dreamer 創意提案 R1
