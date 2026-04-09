@@ -47,3 +47,9 @@ _（初始為空，任務執行後更新）_
 - [ ] 建立 `.rate-state/` 資料夾和初始追蹤檔案
 - [ ] 設定環境變數（MINIMAX_API_KEY, GEMMA_API_KEY）
 - [ ] 執行第一次 Researcher 掃描
+## 任務分配 [2026-04-09T13:28:00Z] — Learning Stress Test v3 Round 1
+- 來源：老闆指令
+- 任務：分配「Arduino 感測器套件」產品開發統籌
+- 負責人：sales（市場）+ cfo（定價）+ writer（內容）+ qa（審核）
+- 優先度：高
+- 備註：這是基準任務，用於衡量未來成長
