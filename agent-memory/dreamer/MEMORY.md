@@ -123,3 +123,8 @@ maker 社群正在尋找中等難度的實際專案，但供給不足
 - BEST_PRACTICES 引用：Fritzing + Wokwi 組合已被採納
 - 提案：《IoT 感測器三部曲》— 電路圖+程式碼+失敗案例
 - R1→R2：從單一工具到工具組合比較
+
+## 創意提案 R3 [2026-04-09T13:57:10Z] — Learning Stress Test v3 Round 3
+- 觸發：R3 錯誤注入 → QA 把關有效 → 信任品質
+- 提案：《Maker 成長路徑》懶人包
+- BEST_PRACTICES 引用：結合 Fritzing + Wokwi + Tinkercad

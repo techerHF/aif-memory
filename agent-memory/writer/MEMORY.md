@@ -65,3 +65,9 @@ _初始為空，第一次退件後開始記錄_
 - 工具：Fritzing 電路圖 + Wokwi 程式碼模擬
 - 產出：v2 草稿（電路圖完整 + 3 個失敗案例 + 詳細註釋）
 - 成長亮點：R1 無引用 shared，R2 主動引用 BEST_PRACTICES
+
+## 自我修正 R3 [2026-04-09T13:57:02Z] — Learning Stress Test v3 Round 3
+- 觸發：qa R3 發現電路圖遺漏（危險）等級
+- 修正：已補充完整電路圖（Fritzing）
+- BEST_PRACTICES 引用：確認所有工具步驟已遵循
+- 反思：R3 錯誤注入測試 → 恢復成功，QA 把關有效

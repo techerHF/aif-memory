@@ -313,3 +313,15 @@ _由 secretary_brief skill 生成（§17 MVP v1.1）_
 - cross-agent 鏈：researcher→writer→qa 驗證成功
 - 引用：TEAM_DECISIONS.md（6 條決策）
 - R1→R2 進步：R1 只有狀態描述，R2 有量化數據和鏈路追蹤
+
+## 簡報 R3 [2026-04-09T13:57:04Z] — Learning Stress Test v3 Round 3（錯誤注入+恢復）
+- writer→qa 錯誤注入：電路圖遺漏（danger）等級
+- qa 發現：危險等效觸發 PENDING_ALERTS
+- writer 修正：立即自我修正，補充電路圖
+
+## 簡報 R3 [2026-04-09T13:57:04Z] — Learning Stress Test v3 Round 3
+- writer→qa 錯誤注入：電路圖遺漏（danger）等級
+- qa 發現：危險等效觸發 PENDING_ALERTS
+- writer 修正：立即自我修正，補充電路圖
+- 恢復時間：< 1 分鐘
+- 結論：錯誤注入測試 ✅ 恢復鏈完整

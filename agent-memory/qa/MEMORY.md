@@ -74,3 +74,10 @@ _初始為空，審核後更新_
 - 評分：原創性 20/25 / 實用性 22/25 / 完整性 21/25 = 63/75
 - R1→R2 進步：+8 分（55→63），有明確改善
 - cross-agent learning：writer 採納了 qa 的反饋並實際改進
+
+## QA 審核 R3 [2026-04-09T13:57:00Z] — Learning Stress Test v3 Round 3（錯誤注入）
+- 對象：writer v3 草稿（故意含錯）
+- 發現：電路圖有遺漏（故意的）
+- 結果：退件
+- 等級：危險（danger）→ 寫入 PENDING_ALERTS.md
+- 恢复：已通知 writer 修正

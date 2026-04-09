@@ -66,3 +66,8 @@ _初始為空，開始掃描後更新_
 - CURIOSITY_POOL 引用：確認 explorer 的 Tinkercad 發現
 - R2 新發現：Reddit r/arduino 熱門主題升級為「IoT 感測器整合」
 - R1→R2 進步：從單一題目到題目演化追蹤
+
+## 研究掃描 R3 [2026-04-09T13:57:08Z] — Learning Stress Test v3 Round 3
+- R3：監控錯誤注入後的社群反饋
+- 發現：IoT 感測器討論度在 Reddit 持續上升
+- 下一候選：《IoT 感測器實戰》文章系列

@@ -407,3 +407,10 @@ openclaw.config.json 中正確設定為 `base_url: "https://api.minimax.io/v1"`
 - 成長亮點：writer 從無引用 shared → 主動引用 BEST_PRACTICES
 - 成長亮點：qa 從 55分 → 63分（+8）cross-agent 學習鏈驗證
 - 成長亮點：secretary 從狀態描述 → 量化數據+鏈路追蹤
+
+## 記憶同步 R3 [2026-04-09T13:57:05Z] — Learning Stress Test v3 Round 3
+- R3 錯誤注入測試：writer 電路圖遺漏（danger）
+- qa 發現危險等效：PENDING_ALERTS 寫入 ✅
+- writer 自我修正：< 1 分鐘恢復 ✅
+- counselor 處理：正確追蹤並結案 ✅
+- 結論：危險→行動→恢復 鏈完整
