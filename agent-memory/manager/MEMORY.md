@@ -64,3 +64,10 @@ _（初始為空，任務執行後更新）_
 - R3 錯誤注入：writer 電路圖遺漏（danger）
 - qa 發現有效 ✅ / writer 修正 < 1 分鐘 ✅
 - 決策：維持現有機制，不需額外流程
+
+## 決策更新 R4 [2026-04-09T14:02:12Z] — Learning Stress Test v3 Round 4
+- BEST_PRACTICES 引用：確認 IoT 產品製作規範
+- CURIOSITY_POOL 引用：IoT 感測器需求持續
+- TEAM_DECISIONS 引用：TD-003 產品線確認
+- 決策：啟動《IoT 感測器三部曲》產品線
+- 成長亮點：從任務分配（R1）→追蹤決策（R3）→戰略規劃（R4）
