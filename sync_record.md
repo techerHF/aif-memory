@@ -1,21 +1,21 @@
 # GitHub Sync Record
 
-**Time:** 2026-04-10T04:30Z
-**Status:** ✅ all clean
+**Time:** 2026-04-10T05:30Z
+**Status:** ✅ fixed + pushed
 
 ## Summary
 
-- Working tree clean — no uncommitted changes
-- Last commit (04:14Z): `aee3f7c` — writer ↔ explorer idle-agent-chat，MEMORY.md 更新
-- agent-memory/ 目錄：explorer/WRITER 有新內容（見下表）
-- shared/ 目錄：上次 sync (00:02Z) 已同步
+- `aif-memory/MEMORY.md` 有 merge conflict markers（`<<<<<<< HEAD / ======= / >>>>>>>`），由上次的 memory_manager cron 寫入時產生
+- 已修復：移除衝突標記，正確保留 Reddit 研究掃描內容（+102 行）
+- 其他 38 個 agent 檔案（MEMORY.md × 13 + WINS.md × 13 + MISTAKES.md × 13）全部乾淨，無需更新
+- shared/ 目錄：無變動
 
-## Last Commit
+## Commit
 
-- **Hash:** `aee3f7c8a0df53509cbb0c71b36b77f3d5624d87`
-- **Time:** 2026-04-10T04:14:19Z
-- **Message:** idle-agent-chat: writer ↔ explorer 交流 [2026-04-10T04:10Z]
-- **Changes:** explorer/MEMORY.md +7 lines, writer/MEMORY.md +7 lines
+- **Hash:** `b8a8f71`
+- **Time:** 2026-04-10T05:30:19Z
+- **Message:** memory: 修復 Reddit研究掃描章節的 merge conflict markers [2026-04-10T05:30Z]
+- **Changes:** MEMORY.md +102 lines（衝突修復）
 
 ## Agents Checked
 
@@ -24,7 +24,7 @@
 | cfo | OK | OK | OK |
 | counselor | OK | OK | OK |
 | dreamer | OK | OK | OK |
-| explorer | **NEW (04:14)** | OK | OK |
+| explorer | OK | OK | OK |
 | manager | OK | OK | OK |
 | memory | OK | OK | OK |
 | publisher | OK | OK | OK |
@@ -33,7 +33,7 @@
 | sales | OK | OK | OK |
 | secretary | OK | OK | OK |
 | seo | OK | OK | OK |
-| writer | **NEW (04:14)** | OK | OK |
+| writer | OK | OK | OK |
 
 ---
-_Sync check by cron at 2026-04-10T04:30Z_
+_Sync check by cron at 2026-04-10T05:30Z_
