@@ -198,3 +198,29 @@ _Sync check by cron at 2026-04-10T09:30Z_
 
 ---
 _Sync check by cron at 2026-04-10T10:00Z_
+
+---
+_Sync check by cron at 2026-04-10T11:00Z_
+
+## Agents Checked
+
+| Agent | MEMORY.md | WINS.md | MISTAKES.md |
+|-------|-----------|---------|-------------|
+| cfo | OK | OK | OK |
+| counselor | OK | OK | OK |
+| dreamer | OK | OK | OK |
+| explorer | OK | OK | OK |
+| manager | OK | OK | OK |
+| memory | OK | OK | OK |
+| publisher | OK | OK | OK |
+| qa | OK | OK | OK |
+| researcher | OK | OK | OK |
+| sales | OK | OK | OK |
+| secretary | OK | OK | OK |
+| seo | OK | OK | OK |
+| writer | OK | OK | OK |
+
+## 變更記錄
+
+- **qa/BEST_PRACTICES.md**（上次同步後新建，idle_growth 自動建立）
+
