@@ -1,31 +1,30 @@
 # GitHub Sync Record
 
-**Time:** 2026-04-10T22:00Z
+**Time:** 2026-04-10T22:30Z
 **Status:** ✅ synced + pushed
 
 ## Summary
 
 檢查了 `agent-memory/` 下所有 13 個 agent 的 MEMORY.md、WINS.md、MISTAKES.md：
 - **無任何檔案變更** — 所有 agent 記憶檔案與上次同步時相同，乾淨
-- **主記憶有變更**：MEMORY.md（Reddit/Hacker News 研究掃描）、dream 系統（phase signals、short-term recall、events、daily-ingestion）已一併推送
+- **主記憶有變更**：dream 系統（phase signals、short-term recall、events、daily-ingestion）已一併推送
 
 ## Changes Detected
 
 | Path | Status |
 |------|--------|
-| `MEMORY.md` | +145 lines（Reddit/HN 研究：Pain Points + 趨勢亮點）|
 | `memory/.dreams/daily-ingestion.json` | +2 -1 |
-| `memory/.dreams/events.jsonl` | +52 |
-| `memory/.dreams/phase-signals.json` | +86 -44 |
-| `memory/.dreams/short-term-recall.json` | +18 -7 |
+| `memory/.dreams/events.jsonl` | +4 |
+| `memory/.dreams/phase-signals.json` | +43 -45 |
+| `memory/.dreams/short-term-recall.json` | +10 -8 |
 
-**Total:** +294 insertions, -53 deletions
+**Total:** +57 insertions, -53 deletions
 
 ## Commit
 
-- **Hash:** `6e107ee`
-- **Time:** 2026-04-10T22:00Z
-- **Message:** sync: 2026-04-10T22:57Z — MEMORY.md research + dream updates
+- **Hash:** `28843ac`
+- **Time:** 2026-04-10T22:30Z
+- **Message:** sync: 2026-04-10T22:30Z — dream system updates
 
 ## Agents Checked
 
@@ -46,4 +45,4 @@
 | writer | OK | OK | OK |
 
 ---
-_Sync check by cron at 2026-04-10T22:00Z_
+_Sync check by cron at 2026-04-10T22:30Z_
