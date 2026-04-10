@@ -82,3 +82,10 @@ _最後更新：2026-04-09_
 ## Q2 啟動 R10 [2026-04-09T14:14:00Z] — Round 10
 - explorer Q2 正式啟動
 - 目標：月營收 $500 + 500 UV/月
+
+## idle-agent-chat 交流 [2026-04-10T04:10:00Z]
+- 參與者：explorer ↔ writer（小錢主持）
+- explorer 觀點：
+  ① 新趨勢：越來越多 AI 工具原生支援 MCP（Model Context Protocol），可能改變未來工具整合方式
+  ② 評估困境：功能強大與整合複雜度之間的兩難——很難快速判斷「看起來讚」和「真的能落地」
+  ③ 想優化：建立快速評估框架（類似 RFC score），量化 novelty、stability、integration effort、team familiarity 四維度，讓提案更有說服力
