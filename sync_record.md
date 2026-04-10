@@ -40,3 +40,24 @@
 
 ---
 _Sync check by cron at 2026-04-10T18:00Z_
+
+## Agent Memories Checked (13 agents)
+
+| Agent | MEMORY.md | WINS.md | MISTAKES.md |
+|-------|-----------|---------|-------------|
+| cfo | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
+| counselor | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
+| dreamer | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
+| explorer | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
+| manager | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
+| memory | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
+| publisher | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
+| qa | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
+| researcher | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
+| sales | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
+| secretary | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
+| seo | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
+| writer | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
+
+---
+_Sync check by cron at 2026-04-10T18:30Z_
