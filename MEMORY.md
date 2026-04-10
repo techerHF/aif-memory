@@ -453,3 +453,105 @@ openclaw.config.json 中正確設定為 `base_url: "https://api.minimax.io/v1"`
 
 **Agents 狀態**（有實質內容）：manager, memory, cfo, counselor, writer
 **Agents 狀態**（模板檔）：dreamer, explorer, publisher, qa, researcher, sales, secretary, seo
+
+---
+
+## Reddit 研究掃描（2026-04-10）
+
+**資料來源**：Web Search + Community Forums 綜合掃描
+**說明**：Reddit API (403) + Arduino Forum (403)，改走 web search + 其他論壇管道。
+**掃描範圍**：r/arduino、r/InteractiveArt、r/electronics、r/maker
+**時間範圍**：2026-04-04 ~ 2026-04-10 (UTC)
+
+---
+
+### 🔴 Pain Points（本週問題）
+
+1. **Arduino IDE 2.3.2 穩定性問題**（跨社群，持續沸騰）
+   - 使用者回報新安裝無法啟動，PowerShell 有錯誤輸出
+   - `library_index.json not existing` 問題
+   - 部分使用者需降級至 Arduino IDE 1.8.19
+   - 與 Teensy 整合時出現 regression
+
+2. **ESP32 USB 連接問題**（r/arduino論壇，2026-04-08）
+   - ESP32 C3 Mini 在 Arduino IDE 中不出現 COM Port
+   - Windows 11 只顯示「USB Serial」而非正確的 COM 埠
+   - CH340 驅動安裝無效
+
+3. **ESPHome 2026.x 全域迴歸錯誤**（GitHub Issues，2026-04）
+   - ESP-IDF 5.5.x 導致所有 ESP32/ESP32-CAM 專案編譯失敗
+   - 影響所有 Home Assistant OS 用戶
+   - 目前是 open issue，尚無解決方案
+
+4. **Raspberry Pi Pico RP2040 ADC 設計缺陷**（Hackster.io 報導）
+   - Raspberry Pi 官方確認 RP2040 ADC 有 differential non-linearity (DNL) 問題
+   - 影響所有 Pico 和其他 RP2040 開發板
+   - 模擬精密感測應用需注意
+
+5. **Arduino 文字學習資源匱乏**（r/arduino，2026-04-09）
+   - 在工作無法看影片的學習者需要文字教程
+   - Paul McWhorter 影片系列是標竿，但缺乏文字替代方案
+   - 職場學習者痛點明確
+
+6. **NRF24L01 高頻 RF 接地問題**（延續上週，持續被問）
+   - 發射距離不足時，碰觸天線才能正常工作
+   - 懷疑接地不良，常見硬體除錯問題
+
+7. **Arduino Nano USB 供電整合問題**（r/arduino）
+   - iPhone 供電給 Nano + OLED 的整合問題
+   - 需要 BMS 選型和升壓/降壓電路知識
+
+---
+
+### 🟢 趨勢亮點
+
+1. **Arduino Days 2026 即將到來**
+   - 官方部落格宣布，預計有 AI 和 edge computing 主題演講
+   - 社群即時項目展示環節
+   - 預期刺激一波新專案發布
+
+2. **AI + 嵌入式系統整合加速**
+   - ESP32-S3 T-Display-AMOLED 桌面遙測顯示器流行
+   - TinyML on Arduino/ESP32 討論增加
+   - 嵌入式 ML 從研究走向 maker 應用
+
+3. **DIY 空氣品質監控持續發燒**
+   - AirGradient DIY 感測器討論持續
+   - IKEA Vindriktning 改裝社群活躍
+   - 室內環境監控剛需明確
+
+4. **Generative AI 進入互動藝術**
+   - 沉浸式藝術展覽使用 AI 生成內容
+   - 互動裝置即時回應觀眾行為
+   - Samsung Art Basel Hong Kong 2026 展示互動科技
+
+5. **懸浮應用持續火熱**
+   - 超音波懸浮、磁懸浮專案仍在 maker 社群有穩定人氣
+   - 從粒子控制到物體懸浮的各種變體
+
+6. **DIY 智慧手表/穿戴裝置**
+   - ESP32 自製智慧手表仍是長青專案
+   - 視障者專用工具（智慧眼鏡、 Speak Caliper）有無障礙設計需求
+
+7. **RP2350 (Pico 2) 生態系正在建立**
+   - arduino-pico core 已支援 ARM + RISC-V 雙核心
+   - GCC 14.3/Newlib 4.5 toolchain 升級
+   - 從 RP2040 到 RP2350 的遷移期
+
+---
+
+### 📌 觀察摘要
+
+- **Arduino IDE 2.x 仍有穩定性問題**：部分使用者被迫降級，長期影響開發體驗
+- **ESP32 生態系受 ESPHome regression 影響**：Home Assistant 用戶需注意
+- **硬體缺陷開始被官方確認**：RP2040 ADC 問題是罕見的官方認證硬體 bug
+- **學習資源需求轉向文字化**：行動工作者需要影片以外的文字教程
+- **AI + 硬體整合趨勢明確**：從maker hobby 走向實際應用
+- **互動藝術技術門檻降低**：感測器 + AI + 即時生成讓個人藝術家也能做大型互動裝置
+
+---
+
+### ⚠️ 限制說明
+- Reddit API 直接存取仍被封鎖（403），資料來源受限於 web search 和第三方論壇
+- Arduino Forum 同樣被封鎖，需靠快取或替代管道
+- 即時性受限，建議設定 Reddit API 或 PRAW 以後繞過封鎖
