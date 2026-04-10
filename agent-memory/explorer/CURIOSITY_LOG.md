@@ -1,0 +1,4 @@
+# CURIOSITY_LOG — explorer
+
+
+- [2026-04-10] [explorer] 記錄1個你觀察到有趣的現象或靈感（不超過50字）
