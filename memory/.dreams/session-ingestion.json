@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "files": {
+    "memory:sessions/ae4e5938-478a-4881-8757-cb69688a7771.jsonl": {
+      "mtimeMs": 1775750279752,
+      "size": 5520,
+      "contentHash": "e0be458a51def640f73546e02dd0271ba6e9cf5a382608df34f9b2409a457a3c",
+      "lineCount": 4,
+      "lastContentLine": 4
+    }
+  },
+  "seenMessages": {
+    "memory:ae4e5938-478a-4881-8757-cb69688a7771": [
+      "cfaace9341cf3dfb9050347775e9aaa34bd986e8",
+      "2c6a2e21476e6dd8668be9d0a81b3754b19ebe0b",
+      "57168d0ecb3a8155ea7ee25cdbb1749c2d7f1753",
+      "2b64ea4aab165fe45bfdfdfb3ace09a79c7151cf"
+    ]
+  }
+}
