@@ -1,191 +1,49 @@
 # GitHub Sync Record
 
-**Time:** 2026-04-10T18:00Z
-**Status:** ✅ in sync (no changes)
+**Time:** 2026-04-10T22:00Z
+**Status:** ✅ synced + pushed
 
 ## Summary
 
-檢查了 `aif-memory/` 主記憶庫（MEMORY.md、WINS.md、MISTAKES.md）及 `agent-memory/` 下所有 13 個 agent 的記憶檔案：
-- **無任何檔案變更** — 所有記憶檔案自上次同步後維持不變
-- 本地與遠端均為 `5df440b`（idle_growth: manager — sync check 17:30Z），已同步，無需推送
+檢查了 `agent-memory/` 下所有 13 個 agent 的 MEMORY.md、WINS.md、MISTAKES.md：
+- **無任何檔案變更** — 所有 agent 記憶檔案與上次同步時相同，乾淨
+- **主記憶有變更**：MEMORY.md（Reddit/Hacker News 研究掃描）、dream 系統（phase signals、short-term recall、events、daily-ingestion）已一併推送
 
 ## Changes Detected
 
-**無。** 工作區乾淨，無待提交的變更。
+| Path | Status |
+|------|--------|
+| `MEMORY.md` | +145 lines（Reddit/HN 研究：Pain Points + 趨勢亮點）|
+| `memory/.dreams/daily-ingestion.json` | +2 -1 |
+| `memory/.dreams/events.jsonl` | +52 |
+| `memory/.dreams/phase-signals.json` | +86 -44 |
+| `memory/.dreams/short-term-recall.json` | +18 -7 |
+
+**Total:** +294 insertions, -53 deletions
 
 ## Commit
 
-- **Latest Hash:** `5df440b`
-- **Time:** 2026-04-10T17:30Z
-- **Message:** idle_growth: manager — sync check 17:30Z
-- **Remote:** ✅ in sync
+- **Hash:** `6e107ee`
+- **Time:** 2026-04-10T22:00Z
+- **Message:** sync: 2026-04-10T22:57Z — MEMORY.md research + dream updates
 
-## Agent Memories Checked (13 agents)
-
-| Agent | MEMORY.md | WINS.md | MISTAKES.md |
-|-------|-----------|---------|-------------|
-| cfo | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| counselor | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| dreamer | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| explorer | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| manager | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| memory | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| publisher | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| qa | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| researcher | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| sales | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| secretary | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| seo | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| writer | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-
----
-_Sync check by cron at 2026-04-10T18:00Z_
-
-## Agent Memories Checked (13 agents)
+## Agents Checked
 
 | Agent | MEMORY.md | WINS.md | MISTAKES.md |
 |-------|-----------|---------|-------------|
-| cfo | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| counselor | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| dreamer | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| explorer | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| manager | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| memory | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| publisher | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| qa | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| researcher | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| sales | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| secretary | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| seo | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| writer | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
+| cfo | OK | OK | OK |
+| counselor | OK | OK | OK |
+| dreamer | OK | OK | OK |
+| explorer | OK | OK | OK |
+| manager | OK | OK | OK |
+| memory | OK | OK | OK |
+| publisher | OK | OK | OK |
+| qa | OK | OK | OK |
+| researcher | OK | OK | OK |
+| sales | OK | OK | OK |
+| secretary | OK | OK | OK |
+| seo | OK | OK | OK |
+| writer | OK | OK | OK |
 
 ---
-_Sync check by cron at 2026-04-10T18:30Z_
-
-## Sync Check — 2026-04-10T19:30Z
-
-**Time:** 2026-04-10T19:30Z
-**Status:** ✅ in sync (no changes)
-
-## Summary
-
-檢查了 `aif-memory/` 主記憶庫（MEMORY.md、WINS.md、MISTAKES.md）及 `agent-memory/` 下所有 13 個 agent 的記憶檔案：
-- **無任何檔案變更** — 所有記憶檔案自上次同步後維持不變
-- 本地與遠端均為 `b4e53e3`（idle_growth: secretary — tip），已同步，無需推送
-
-## Changes Detected
-
-**無。** 工作區乾淨，無待提交的變更。
-
-## Commit
-
-- **Latest Hash:** `b4e53e3`
-- **Time:** 2026-04-10T19:08Z
-- **Message:** idle_growth: secretary — tip
-- **Remote:** ✅ in sync
-
-## Agent Memories Checked (13 agents)
-
-| Agent | MEMORY.md | WINS.md | MISTAKES.md |
-|-------|-----------|---------|-------------|
-| cfo | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| counselor | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| dreamer | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| explorer | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| manager | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| memory | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| publisher | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| qa | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| researcher | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| sales | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| secretary | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| seo | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| writer | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-
----
-_Sync check by cron at 2026-04-10T19:30Z_
-
-## Sync Check — 2026-04-10T20:00Z
-
-**Time:** 2026-04-10T20:00Z
-**Status:** ✅ in sync (no changes)
-
-## Summary
-
-檢查了 `aif-memory/` 主記憶庫（MEMORY.md、WINS.md、MISTAKES.md）及 `agent-memory/` 下所有 13 個 agent 的記憶檔案：
-- **無任何檔案變更** — 所有記憶檔案自上次同步後維持不變
-- 本地與遠端均為 `b64af77`（sync_record: 2026-04-10T19:30Z），已同步，無需推送
-
-## Changes Detected
-
-**無。** 工作區乾淨，無待提交的變更。
-
-## Commit
-
-- **Latest Hash:** `b64af77`
-- **Time:** 2026-04-10T19:30Z
-- **Message:** sync_record: 2026-04-10T19:30Z
-- **Remote:** ✅ in sync
-
-## Agent Memories Checked (13 agents)
-
-| Agent | MEMORY.md | WINS.md | MISTAKES.md |
-|-------|-----------|---------|-------------|
-| cfo | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| counselor | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| dreamer | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| explorer | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| manager | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| memory | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| publisher | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| qa | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| researcher | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| sales | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| secretary | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| seo | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| writer | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-
----
-_Sync check by cron at 2026-04-10T20:00Z_
-
-## Sync Check — 2026-04-10T20:30Z
-
-**Time:** 2026-04-10T20:30Z
-**Status:** ✅ in sync
-
-## Summary
-
-檢查了 `aif-memory/` 主記憶庫及 `agent-memory/` 下所有 13 個 agent 的記憶檔案：
-- Dreamer 在 20:08Z 新增 `FREE_THOUGHTS.md` 1 行，已推送 ✅
-- 所有記憶檔案目前與遠端同步，無待處理變更
-
-## Commit
-
-- **Latest Hash:** `e624f3b`
-- **Time:** 2026-04-10T20:08Z
-- **Message:** idle_growth: dreamer — dream
-- **Remote:** ✅ in sync
-
-## Agent Memories Checked (13 agents)
-
-| Agent | MEMORY.md | WINS.md | MISTAKES.md |
-|-------|-----------|---------|-------------|
-| cfo | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| counselor | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| dreamer | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| explorer | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| manager | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| memory | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| publisher | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| qa | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| researcher | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| sales | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| secretary | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| seo | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-| writer | ✅ 無變更 | ✅ 無變更 | ✅ 無變更 |
-
----
-_Sync check by cron at 2026-04-10T20:30Z_
-
----
-_Sync check by cron at 2026-04-10T21:00Z — 無新變更，工作樹乾淨_
+_Sync check by cron at 2026-04-10T22:00Z_
