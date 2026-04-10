@@ -555,3 +555,148 @@ openclaw.config.json 中正確設定為 `base_url: "https://api.minimax.io/v1"`
 - Reddit API 直接存取仍被封鎖（403），資料來源受限於 web search 和第三方論壇
 - Arduino Forum 同樣被封鎖，需靠快取或替代管道
 - 即時性受限，建議設定 Reddit API 或 PRAW 以後繞過封鎖
+
+---
+
+## Reddit/Hacker News 研究掃描（2026-04-10 晚間）
+
+**資料來源**：Hackaday + Adafruit Blog（Reddit 直接存取遭封鎖，改走 maker 社群龍頭部落格）
+**掃描時間**：2026-04-10T18:04 UTC
+**說明**：Reddit API (403) + Arduino Forum (403)，改走 Hackaday 部落格首頁 + Arduino Hacks 分類 + Adafruit Blog。Hackaday 和 Adafruit 是 maker 圈最重要的兩個內容來源，能反映本週真實熱度。
+
+---
+
+### 🔴 Pain Points（本週問題）
+
+1. **傳感器噪音與精度問題**（跨多個社群，持續沸騰）
+   - BME280 在高濕度（50-60%）時出現溫度/濕度大幅波動
+   - MAX6675 熱電偶感測器無故讀取 0°C，替換硬體後仍無效
+   - 熱電偶讀數噪音問題（需軟體平均化，仍被認為不是正確做法）
+   - 典型感測器除錯痛點：硬體故障 vs 佈線接地 vs 軟體設定的鑑別診斷
+
+2. **SMD 針腳探測困難**（Hackaday，2026-04-09）
+   - SMD 元件針腳太小，傳統探筆無法準確接觸
+   - 需要的夾具和專用工具逐漸被 maker 社群討論
+   - Kerry Wong 推薦中國製夾具，針對 QFP 封裝
+
+3. **USB 開發複雜度**（Hackaday，2026-04-09）
+   - USB 協定抽象層不足，多數應用程式設計師不懂底層
+   - libusb 在 Windows 上的行為差異
+   - 需要更多「USB for Software Developers」的科普資源
+
+4. **Rowhammer 攻擊影響 GPU**（Hackaday Security，2026-04-10）
+   - GDDR6-Fail 研究發現 GPU Rowhammer 攻擊新向量
+   - 繞過 PCI bus 的記憶體保護
+   - ECC 模式能緩解但犧牲可用 RAM
+   - 對 AI/共享 GPU 環境有實際風險
+
+5. **Linux 對老舊 CPU 支援收斂傳聞**（Hackaday Podcast 365，2026-04-10）
+   - Linux 可能準備放棄 i486 支援
+   - 長期資料存儲格式爭議（Markdown vs 封檔格式）
+
+6. **NANO V3.0 ATmega328P CH340G 兼容性問題**（r/arduino）
+   - Amazon 買到的 CH340 驅動問題
+   - 某些情形下可燒錄但行為異常
+
+---
+
+### 🟢 趨勢亮點
+
+1. **Artemis II 月球任務（全社群熱點）**
+   - NASA 人類繞月任務再次激發太空 maker 熱情
+   - 錯誤容忍電腦設計細節被深入討論
+   - 激發「當我們仰望太空時該做什麼」maker 專案討論
+   - RFID + 太空主題結合興趣上升
+
+2. **Arduino VENTUNO Q — AI 導向新硬體**（Hackaday，2026-03-10）
+   - Qualcomm 收購 Arduino 後首款旗艦產品
+   - 基於 Dragonwing IQ-8275 SoC + STM32H5F5 MCU 雙核心
+   - 8核 2.35GHz ARM + 16GB LPDDR5 + 4MB Flash
+   - 定位：工業自動化 + AI edge computing
+   - 釋出時間："soon"
+   - 社群反應兩極：有人期待 AI 能力，有人擔心 Arduino 品牌稀釋
+
+3. **Raspberry Pi Pico 2 (RP2350) 遊戲應用爆發**
+   - Wolfenstein 3D 在 RP2350 上成功運行（Adafruit，2026-04-10）
+   - arduino-pico core 已完整支援 ARM + RISC-V 雙核心模式
+   - RP2350 生態系正在快速建立中
+
+4. **3D 列印持續火熱**
+   - Bambu Lab 相關專案越來越多（ESP32-C3 + LCD 1.28" 案例）
+   - 收納解決方案（Drawer Storage for Puzzles）
+   - 機構整合專案（Articulated Lantern、Flexi Spring Easter Bunny）
+   - Bambu Monitor 結合 ESP32-C3 是新興熱門組合
+
+5. **CircuitPython / MicroPython 生態系持續壯大**
+   - Python on Microcontrollers Newsletter 每週穩定發布（2026-04-10 最新一期）
+   - UART Display Write 教學（John Park's CircuitPython Parsec）
+   - Adafruit Matrix Portal S3（新產品， CircuitPython 驅動網路顯示器）
+   - 超過 5 個主要分類：CircuitPython、microPython、Raspberry Pi、Python、ARM Development
+
+6. **細菌用聲音識別新技術**（Hackaday，2026-04-10）
+   - TU Delft 研究：石墨烯纳米鼓將細菌運動轉換為聲音指紋
+   - 可識別 3 種常見細菌，準確率近 90%
+   - 從研究走向醫院早期應用階段
+   - 興趣領域：生物感測器、醫療設備 maker
+
+7. **DOOM 在各種奇怪平台上運行（病毒式傳播）**
+   - TTF Font 內運行 DOOM（Hackaday，2026-04-10）— TrueType 字體 bytecode 竟可跑 ray casting
+   - DNS 協定上運行 DOOM（Hackaday，2026-03-31）— D in DNS stands for DOOM
+   - 各種極限移植挑戰持續吸引 maker 眼球
+
+8. **FreeCAD + 藍牙卡尺整合**（Hackaday Podcast 365）
+   - 將測量工具直接與 CAD 軟體打通是 maker 熱點
+   - 組織零件盒的「禪學」讨论（整理收納的藝術）
+
+9. **NASA 錯誤容忍電腦架構科普**（Adafruit，2026-04-10）
+   - Artemis II 載人繞月太空船的容錯電腦設計被詳細解析
+   - maker 從中學習航太級可靠性設計
+
+10. **Mother's Day Gift Guide 帶動禮物導向專案需求**（Adafruit，2026-04-09）
+    - 節慶效應：DIY 電子禮物需求上升
+
+---
+
+### 📊 基於 Hackaday 類目熱度的觀察
+
+**Hackaday 類目點閱排序**（本週）：
+1. Arduino Hacks — 持續是最大類目（3,085 篇文章）
+2. Tool Hacks — 工具改裝熱門（3,083 篇文章）
+3. Robots Hacks — 機器人專案穩定（2,457 篇文章）
+4. 3D Printer hacks — 3D 列印（2,803 篇文章）
+
+**本週 Hackaday 首頁文章（按時間排序）**：
+- 2026-04-10：Hackaday Podcast Ep365、Security（Rowhammer GPU）、細菌音頻識別、TTF DOOM
+- 2026-04-09：Windows Vista 2026 回顧、USB 抽象化、Kerry Wong SMD 夾具
+- 2026-04-01：Artemis II 月球任務追蹤
+
+---
+
+### 🔍 跨社群 Pain Points 總結
+
+1. **感測器精度與噪音** — BME280/MAX6675/熱電偶 三大魔王
+2. **USB 開發複雜度** — 軟體開發者需要更多 USB 抽象化資源
+3. **SMD 探測工具** — 小針腳封裝的測試方案需求明確
+4. **GPU 安全性新風險** — Rowhammer 影響 GDDR6，maker 開始關注
+5. **Linux 老舊硬體支援** — i486 可能被放棄影響長尾設備
+6. **3D 列印整合** — 機構 + 電子 + 軟體 的跨領域整合仍是挑戰
+
+---
+
+### 🚀 跨社群趨勢觀察
+
+1. **AI + 嵌入式硬體整合加速** — Arduino VENTUNO Q 是明確信號
+2. **太空 maker 熱情重燃** — Artemis II 任務激發新一波太空相關 DIY
+3. **RP2350 生態系爆發前期** — 遊戲和高效能應用在 Pico 2 上興起
+4. **生物感測走向消費級** — 細菌音頻識別、石墨烯感測器開始實際應用
+5. **DOOM 是永恆的 maker 測試基準** — 任何新平台都要挑戰一下 DOOM port
+6. **CircuitPython 標準化** — Python on Microcontrollers 已成為明確的教學和量產標準
+7. **3D 列印持續滲透** — 從獨立專案走向與電子/軟體深度整合
+8. **節慶效應穩定** — Mother's Day 帶動禮物導向專案需求
+
+---
+
+### ⚠️ 限制說明
+- Reddit 直接存取遭封鎖（403），無法取得即時 r/arduino、r/electronics、r/maker、r/InteractiveArt 的原生內容
+- 本次掃描依賴 Hackaday + Adafruit Blog，覆蓋範圍以 maker 硬體專案為主，互動藝術面向可能不足
+- r/InteractiveArt 規模本來就小，加上資料缺口，建議直接瀏覽該 subreddit 或互動藝術專門平台
