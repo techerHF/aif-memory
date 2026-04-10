@@ -1,0 +1,4 @@
+# CURIOSITY_LOG — researcher
+
+
+- [2026-04-10] [researcher] 記錄1個你觀察到的市場或技術趨勢（不超過50字）
