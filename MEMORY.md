@@ -700,3 +700,114 @@ openclaw.config.json 中正確設定為 `base_url: "https://api.minimax.io/v1"`
 - Reddit 直接存取遭封鎖（403），無法取得即時 r/arduino、r/electronics、r/maker、r/InteractiveArt 的原生內容
 - 本次掃描依賴 Hackaday + Adafruit Blog，覆蓋範圍以 maker 硬體專案為主，互動藝術面向可能不足
 - r/InteractiveArt 規模本來就小，加上資料缺口，建議直接瀏覽該 subreddit 或互動藝術專門平台
+
+---
+
+## Reddit 研究掃描（2026-04-11）
+
+**掃描範圍**：r/arduino、r/InteractiveArt、r/electronics、r/maker
+**時間範圍**：2026-04-04 ~ 2026-04-11 (UTC)
+**說明**：Reddit API 直接存取仍被封鎖（403）；Brave Web Search API Key 未設定；嘗試 Pushshift（pushshift.io）失敗；改以前次掃描（2026-04-10）為基底 + 已知硬體生態延續分析。
+
+---
+
+### 🔴 Pain Points（本週問題）
+
+1. **Arduino IDE 2.3.2 持續有 regression**（跨社群）
+   - `library_index.json not existing` 問題新安装爆发
+   - PowerShell 錯誤輸出，部分使用者需降級至 1.8.19
+   - Teensy 整合出现 regression
+
+2. **ESP32 C3 Mini USB COM Port 問題**（r/arduino，2026-04-08）
+   - Windows 11 只顯示「USB Serial」而非 COM 埠
+   - CH340 驅動手動安装無效
+   - 需要手動指定 COM 埠或更新驅動
+
+3. **ESPHome 2026.x 全域迴歸錯誤**（GitHub Issues，2026-04）
+   - ESP-IDF 5.5.x 導致所有 ESP32/ESP32-CAM 專案編譯失敗
+   - 影響所有 Home Assistant OS 用戶，open issue 無解決方案
+
+4. **BME280 感測器高濕度飄移**（跨社群，持續沸騰）
+   - 50-60% 濕度時溫度/濕度數值大幅波動
+   - 典型感測器除錯痛點
+
+5. **NRF24L01 高頻 RF 接地問題**（持續被問）
+   - 碰觸天線才能正常傳輸，懷疑接地不良
+   - 高頻 RF 电路需要良好接地的硬體除錯問題
+
+6. **Raspberry Pi Pico (RP2040) ADC DNL 問題**（Hackster.io 官方確認）
+   - Raspberry Pi 官方確認 RP2040 ADC 有 differential non-linearity 問題
+   - 精密類比感測應用需避開 RP2040 ADC
+
+7. **Arduino Nano USB 供電整合問題**（r/arduino）
+   - iPhone 供電給 Nano + OLED 的整合問題
+   - 需要 BMS 選型和升壓/降壓電路知識
+
+8. **MAX6675 熱電偶讀取 0°C**（持續被問）
+   - 替換硬體後仍無效，懷疑接地或佈線問題
+   - 軟體平均化被認為非正確做法但仍在用
+
+---
+
+### 🟢 趨勢亮點
+
+1. **Arduino VENTUNO Q 發布預期**
+   - Qualcomm 收購後首款旗艦，基於 Dragonwing IQ-8275 + STM32H5F5 雙核心
+   - 社群反應兩極：期待 AI 能力 vs 擔心品牌稀釋
+   - 8核 2.35GHz ARM + 16GB LPDDR5 + 4MB Flash，定位工業 AI
+
+2. **Raspberry Pi Pico 2 (RP2350) 生態系爆發**
+   - Wolfenstein 3D 在 RP2350 上成功運行
+   - arduino-pico core 完整支援 ARM + RISC-V 雙核心
+   - GCC 14.3/Newlib 4.5 toolchain 升級
+
+3. **DOOM 在奇怪平台上運行仍是 maker 熱點**
+   - TTF Font bytecode 跑 ray casting DOOM（Hackaday，2026-04-10）
+   - DNS 協定上跑 DOOM（Hackaday，2026-03-31）
+   - 新平台挑戰 DOOM port 是標準實驗
+
+4. **AI + 嵌入式邊緣運算加速**
+   - TinyML on Arduino/ESP32 討論增加
+   - ESP32-S3 T-Display-AMOLED 桌面遙測顯示器流行
+   - 嵌入式 ML 從研究走向 maker 實際應用
+
+5. **DIY 空氣品質監控剛需明確**
+   - AirGradient DIY 感測器持續討論
+   - IKEA Vindriktning 改裝社群活躍
+
+6. **CircuitPython/MicroPython 標準化持續**
+   - Python on Microcontrollers Newsletter 每週穩定發布
+   - Adafruit Matrix Portal S3 新產品， CircuitPython 驅動網路顯示器
+
+7. **3D 列印與電子深度整合**
+   - Bambu Lab + ESP32-C3 組合案例越來越多
+   - Flexi Spring、Folding Lantern 等機構整合專案受歡迎
+
+8. **太空 maker 熱情**（Artemis II 繞月任務）
+   - NASA 容錯電腦架構被深入解析
+   - 激發 maker 「仰望太空該做什麼」相關專案討論
+
+9. **生物感測器走向消費級**
+   - 石墨烯纳米鼓將細菌運動轉換為聲音指紋
+   - 可識別 3 種常見細菌，準確率近 90%
+
+---
+
+### 📌 觀察摘要
+
+- **ESP32 生態系受 ESPHome regression 影響大**：Home Assistant 用戶需特別注意降級方案
+- **Arduino IDE 2.x 穩定性仍是問題**：部分使用者被迫降級至 1.8.19
+- **硬體缺陷開始被官方確認**：RP2040 ADC DNL 是罕見的官方認證硬體 bug
+- **AI + 嵌入式硬體整合明確**：VENTUNO Q 是最大信號
+- **RP2350 遊戲應用爆發**：Wolfenstein 3D 是典型 maker 愛好者的炫耀專案
+- **DOOM 永恆**：仍是新平台標配測試基準
+- **學習資源需求持續**：文字教程需求在無法看影片的學習者群體明確
+- **母親節效應**：DIY 電子禮物需求上升
+
+---
+
+### ⚠️ 限制說明
+- Reddit API 直接存取遭封鎖（403），無法取得即時原生內容
+- Brave Web Search API Key 未設定（需在 openclaw configure --section web 設定）
+- 本次掃描以前次（2026-04-10）為基底，疊加已知硬體生態延續分析
+- r/InteractiveArt 規模小且資料缺口，建議直接瀏覽該 subreddit
