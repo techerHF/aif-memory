@@ -47,3 +47,4 @@ _（初始為空，任務執行後更新）_
 - [ ] 建立 `.rate-state/` 資料夾和初始追蹤檔案
 - [ ] 設定環境變數（MINIMAX_API_KEY, GEMMA_API_KEY）
 - [ ] 執行第一次 Researcher 掃描
+

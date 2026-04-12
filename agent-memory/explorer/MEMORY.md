@@ -89,3 +89,4 @@ _最後更新：2026-04-09_
   ① 新趨勢：越來越多 AI 工具原生支援 MCP（Model Context Protocol），可能改變未來工具整合方式
   ② 評估困境：功能強大與整合複雜度之間的兩難——很難快速判斷「看起來讚」和「真的能落地」
   ③ 想優化：建立快速評估框架（類似 RFC score），量化 novelty、stability、integration effort、team familiarity 四維度，讓提案更有說服力
+

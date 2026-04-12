@@ -462,3 +462,4 @@ openclaw.config.json 中正確設定為 `base_url: "https://api.minimax.io/v1"`
 **結果**：✅ 全部檔案與 GitHub HEAD 同步，無需更新
 **最後Commit**：4566491 team_sync (2026-04-09T19:09:38Z)
 **Working Tree**：乾淨，無待提交變更
+

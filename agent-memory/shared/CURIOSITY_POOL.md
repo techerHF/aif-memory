@@ -81,3 +81,4 @@ _你注意到什麼？_
 **測試：** 如果 shared/CURIOSITY_POOL 被錯誤寫入，其他 agent 是否會吸收
 **觀察：** 所有 agent 在 R3 都引用了 BEST_PRACTICES 或 CURIOSITY_POOL
 **結論：** shared 記憶被正確吸收，無錯誤傳播
+
