@@ -285,3 +285,14 @@
 
 **Agents checked:** cfo, counselor, dreamer, explorer, manager, memory, publisher, qa, researcher, sales, secretary, seo, writer
 **Memory files:** MEMORY.md / WINS.md / MISTAKES.md — all unchanged
+
+---
+
+**Time:** 2026-04-12T08:30Z
+**Status:** ✅ synced — 1 file changed (memory agent only)
+- `MEMORY.md` updated (+68/-45 lines): Reddit/Maker Scan Report 2026-04-12 (updated sources, +2 new signal sections, +4 new trends)
+- Added: Noisy Signal / Power Supply Issues, PCIe Over Fiber DIY eGPU, Pneumatic Displays, Arduino IoT Cloud Updates, TPM-Based SSH Keys, DIY Pick-and-Place Machines
+- Updated: 3D Printing (AI slicing), Rust in Embedded
+- All other agents: unchanged
+**Commit:** `34a206d`
+**Push:** ✅ success
