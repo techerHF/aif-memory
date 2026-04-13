@@ -224,3 +224,13 @@
 **Memory files:** MEMORY.md / WINS.md / MISTAKES.md — all unchanged since last sync (23:30Z)
 **Commit:** `a8e9100` — already up to date
 
+
+**Timestamp:** 2026-04-13T00:30Z
+**Status:** ✅ synced — pull --rebase then pushed
+**Agents checked:** main, qa
+**Memory files:**
+  - MEMORY.md: updated (weekly Reddit/Maker scan report, Taiwan market focus, RP2350 bug ongoing)
+  - agent-memory/qa/MEMORY.md: updated (idle-agent-chat 記錄 from 2026-04-12)
+  - memory/2026-04-13.md: new (dreamer daily ingestion)
+**Operational files:** skipped (.dreams in .gitignore)
+**Commit:** `22b6ab3`
